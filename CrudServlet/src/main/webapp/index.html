@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Servlet</title>
+</head>
+
+<body>
+    <h1>Adicionar novo Empregado</h1>
+    <form action="SalvaServlet" method="post">
+        <table>
+            <tr>
+                <td>Nome:</td>
+                <td><input type="text" name="nome"></td>
+            </tr>
+            <tr>
+                <td>Senha:</td>
+                <td><input type="password" name="senha"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>
+                    Pais:
+                </td>
+                <td>
+                    <select name="pais" id="" style="width: 150px;">
+                        <option value="Brasil">Brasil</option>
+                        <option value="Bolovia">Bolovia</option>
+                        <option value="Paraguai">Paraguai</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Salvar Empregado">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br><br>
+	<br/>  
+	<a href="VisualizarServlet">ver empregados</a>  
+  
+</body>
+
+</html>
